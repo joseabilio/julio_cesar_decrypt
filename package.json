@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "axios": "^0.19.2",
+    "crypto": "^1.0.1",
+    "form-data": "^3.0.0",
+    "fs": "^0.0.1-security",
+    "request": "^2.88.2"
+  }
+}
