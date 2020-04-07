@@ -1,10 +1,13 @@
 const fs        = require('fs');
+const path      = require('path');
 const request   = require('request');
 const crypto    = require('crypto');
 const FormData  = require('form-data');
 const axios     = require('axios');
 
-const filePath      = 'D:\\Projetos\\CriptografiaJulioCesar\\answer.json';
+
+const fileName      = 'answer.json';
+const filePath      = path.join(__dirname, fileName);
 const token         = '2d6acf07e89ebdca9587ef97cf7a7e747a399b06';
 const hostname      = `https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=${token}`;
 const hostSendFile  = `https://api.codenation.dev/v1/challenge/dev-ps/submit-solution?token=${token}`;
